@@ -1,4 +1,4 @@
-name: Testing nodeapp calls
+name: Testing Nodeapp Calls
 
 on: [push]
 

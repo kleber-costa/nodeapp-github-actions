@@ -1,5 +1,4 @@
-
-name: Node version test
+name: Node Version Test
 
 on:
   push:
