@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "prom-client": "^13.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.1.4",
+    "tap-spec": "^2.2.2",
+    "tape": "^5.3.0"
+  },
+  "name": "nodeapp",
+  "description": "README.md",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "node test | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdpsc-uff/simple_nodeapi.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Kleber Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdpsc-uff/simple_nodeapi/issues"
+  },
+  "homepage": "https://github.com/kdpsc-uff/simple_nodeapi#readme"
+}
