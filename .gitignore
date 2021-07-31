@@ -1,2 +1,5 @@
-
+*.swp
+*.swap
+*.tmp
+*.temp
 nome_modules/*
