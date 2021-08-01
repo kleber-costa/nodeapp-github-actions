@@ -16,7 +16,7 @@ The application log is being sent to the console, directly to standard output.
 
 ### The first step is to clone the repository and access it
 ```bash
-$ git clone git@github.com:kdpsc/nodeapp_github_actions.git
+$ git clone git@github.com:kleber-costa/nodeapp_github_actions.git
 $ cd nodeapp_github_actions
 ```
 
@@ -41,12 +41,17 @@ $ docker run -d --name nodeapp -p 3100:3100 nodeapp
 ```
 ## Using Github Actions
 
-### Fork the project
+### Get this project
 
-Fork the project, once you have your fork go to the [Docker Hub](https://hub.docker.com) and create a repository, after that configure an access token, beware, free accounts on the docker hub can only have one token.
+To use Github action, you must fork the project,this is the first step.
+
+### Create Docker Hub account with container registry and access token
+
+Once you have your fork go to the [Docker Hub](https://hub.docker.com) and create a repository, after that configure an access token, beware, free accounts on the docker hub can only have one token.
 
 See this official documentation on how to [create a container registry](https://docs.docker.com/docker-hub) and see this official documentation on how to [create a access token](https://docs.docker.com/docker-hub/access-tokens) in Docker Hub.
 
+### Configure Github repository secrets
 
 Enter your forked repository settings and configure this secrets:
 
@@ -56,4 +61,20 @@ Enter your forked repository settings and configure this secrets:
 ```DOCKERHUB_USER``` receives as a value your username in the docker hub.
 ```DOCKERHUB_TOKEN``` receives as value the access token generated in the docker hub.
 
+See this official documentation on how to [configure a Github repository secret](https://docs.github.com/en/actions/reference/encrypted-secrets), if you have any questions about how to do.
 
+### Running Github Actions over develop branch
+
+#### Node.js test application
+
+Make something changes to README.md or any other file that doesn't interrupt the application or test flow, make it in the develop branch, and push the code.
+Follow Github Actions and check that the tests will run on the nodeapp-test.yml and node-version.yml files that are inside .github/workflows
+
+### Running Github Actions over main branch
+
+#### Build, packages, and sends the artifact to the docker registry
+
+The first step is changing the repository reference line on the docker-build.yml, you must configure your docker repository on this last line of file.
+
+Make something changes to README.md or any other file that doesn't interrupt the application or test flow, make it in the main branch, and push the code.
+Follow Github Actions and check that the workload will run on the docker-build.yml file that are inside .github/workflows.
