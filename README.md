@@ -67,7 +67,7 @@ See this official documentation on how to [configure a Github repository secret]
 
 #### Node.js test application
 
-Make something changes to README.md or any other file that doesn't interrupt the application or test flow, make it in the develop branch, and push the code.
+Make any changes that don't interrupt the app or test flow, make it in the development branch, and submit the code.
 Follow Github Actions and check that the tests will run on the nodeapp-test.yml and node-version.yml files that are inside .github/workflows
 
 ### Running Github Actions over main branch
@@ -76,5 +76,5 @@ Follow Github Actions and check that the tests will run on the nodeapp-test.yml 
 
 The first step is changing the repository reference line on the docker-build.yml, you must configure your docker repository on this last line of file.
 
-Make something changes to README.md or any other file that doesn't interrupt the application or test flow, make it in the main branch, and push the code.
+Make any changes that don't interrupt the app or test flow, make it in the development branch, and submit the code.
 Follow Github Actions and check that the workload will run on the docker-build.yml file that are inside .github/workflows.
