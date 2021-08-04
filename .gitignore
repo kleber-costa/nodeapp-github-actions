@@ -2,4 +2,5 @@
 *.swap
 *.tmp
 *.temp
-nome_modules/*
+
+node_modules/
