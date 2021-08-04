@@ -25,3 +25,14 @@ test('index page check', function(t){
       t.end();
     });
 });
+
+test('metrics page check', function(t){
+  request(app)
+    .get('/metrics')
+    .expect('Content-Type', /text/)
+    .expect(200)
+    .end(function (err, res) {
+      t.error(err, 'No error');
+      t.end();
+    });
+});
