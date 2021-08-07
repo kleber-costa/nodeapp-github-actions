@@ -7,7 +7,7 @@
   "devDependencies": {
     "supertest": "^6.1.4",
     "tap-spec": "^2.2.2",
-    "tape": "^5.3.0"
+    "tape": "^5.3.1"
   },
   "name": "nodeapp",
   "description": "README.md",
