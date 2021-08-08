@@ -20,6 +20,16 @@ $ git clone git@github.com:kleber-costa/nodeapp_github_actions.git
 $ cd nodeapp_github_actions
 ```
 
+### Install application dependencies for tests
+```bash
+$ npm install --save-dev supertest tape
+```
+
+### Install application dependencies for run
+```bash
+$ npm install --save express prom-client morgan
+```
+
 ### To run the application in the command line:
 ```bash
 $ npm start
