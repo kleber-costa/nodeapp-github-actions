@@ -2,9 +2,9 @@ name: Node Version Test
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ feature, develop, release, hotfix ]
   pull_request:
-    branches: [ develop ]
+    branches: [ feature, develop, release, hotfix ]
 
 jobs:
   build:
