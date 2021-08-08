@@ -22,15 +22,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdpsc-uff/simple_nodeapi.git"
+    "url": "git+https://github.com/kdpsc-uff/nodeapp_github_actions.git"
   },
-  "keywords": [
-    "api"
-  ],
+  "keywords": {
+    "api",
+    "nodejs",
+    "supertest",
+    "tape",
+    "morgan",
+    "prom-client",
+    "health check",
+    "git flow",
+    "github actions"
+  },
   "author": "Kleber Costa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kdpsc-uff/simple_nodeapi/issues"
+    "url": "https://github.com/kdpsc-uff/nodeapp_github_actions/issues"
   },
-  "homepage": "https://github.com/kdpsc-uff/simple_nodeapi#readme"
+  "homepage": "https://github.com/kdpsc-uff/nodeapp_github_actions#readme"
 }
