@@ -24,17 +24,9 @@
     "type": "git",
     "url": "git+https://github.com/kdpsc-uff/nodeapp_github_actions.git"
   },
-  "keywords": {
-    "api",
-    "nodejs",
-    "supertest",
-    "tape",
-    "morgan",
-    "prom-client",
-    "health check",
-    "git flow",
-    "github actions"
-  },
+  "keywords": [
+    "api"
+  ],
   "author": "Kleber Costa",
   "license": "ISC",
   "bugs": {
