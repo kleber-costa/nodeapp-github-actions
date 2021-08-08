@@ -53,7 +53,7 @@ $ docker run -d --name nodeapp -p 3100:3100 nodeapp
 
 ### Get this project
 
-To use Github action, you must fork the project,this is the first step.
+To use Github action, you must fork the project, this is the first step.
 
 ### Create Docker Hub account with container registry and access token
 
