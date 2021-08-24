@@ -16,7 +16,7 @@ The application log is being sent to the console, directly to standard output.
 
 ### The first step is to clone the repository and access it
 ```bash
-$ git clone git@github.com:kleber-costa/nodeapp_github_actions.git
+$ git clone git@github.com:kleber-costa/nodeapp-github-actions.git
 $ cd nodeapp_github_actions
 ```
 
